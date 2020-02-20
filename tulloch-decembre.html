@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta http-equiv="content-type" content="text/html charset=UTF-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+    <!-- Tell iOS not to automatically link certain text strings. -->
+    <title>*|MC:SUBJECT|*</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+    <style>
+      * {
+      font-family:sans serif !important;
+      }
+    </style>
+    <![endif]-->
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!--<![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Abel%7CNunito:300&amp;display=swap" rel="stylesheet">
+    <!-- Web Font / @font-face : END -->
+    <!-- CSS Reset : BEGIN -->
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG />
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <!-- CSS Reset : END -->
+    <!-- Progressive Enhancements : BEGIN -->
+    <!-- Progressive Enhancements : END -->
+    <style type="text/css">
+      /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      html,body {
+        margin:0 !important;
+        padding:0 !important;
+        height:100% !important;
+        width:100% !important;
+      }
+      
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust:100%;
+        -webkit-text-size-adjust:100%;
+      }
+      
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin:0 !important;
+      }
+      
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,td {
+        mso-table-lspace:0 !important;
+        mso-table-rspace:0 !important;
+      }
+      
+      /* What it does: Replaces default bold style. */
+      th {
+        font-weight:normal;
+      }
+      
+      /* What it does: Fixes webkit padding issue. */
+      table {
+        border-spacing:0 !important;
+        border-collapse:collapse !important;
+        table-layout:fixed !important;
+        margin:0 auto !important;
+      }
+      
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration:none;
+        color:#0000EE;
+      }
+      
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode:bicubic;
+      }
+      
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      a[x-apple-data-detectors],/* iOS */
+      .unstyle-auto-detected-links a,.aBn {
+        border-bottom:0 !important;
+        cursor:default !important;
+        color:inherit !important;
+        text-decoration:none !important;
+        font-size:inherit !important;
+        font-family:inherit !important;
+        font-weight:inherit !important;
+        line-height:inherit !important;
+      }
+      
+      /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+      .im {
+        color:inherit !important;
+      }
+      
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display:none !important;
+        opacity:.01 !important;
+      }
+      
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display:none !important;
+      }
+      
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+      /* Create one of these media queries for each additional viewport size you'd like to fix */
+      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        u ~ div .email-container {
+          min-width:320px !important;
+        }
+      }
+      
+      /* iPhone 6, 6S, 7, 8, and X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u ~ div .email-container {
+          min-width:375px !important;
+        }
+      }
+      
+      /* iPhone 6+, 7+, and 8+ */
+      @media only screen and (min-device-width: 414px) {
+        u ~ div .email-container {
+          min-width:414px !important;
+        }
+      }
+      
+      .mcnPreviewText {
+        display:none !important;
+      }
+      
+      /*
+            a {
+                color:#666666;
+            }*/
+      /* Media Queries */
+      @media screen and (max-width: 600px) {
+        .email-container {
+          width:100% !important;
+          margin:auto !important;
+        }
+        
+        /* What it does: Forces table cells into full-width rows. */
+        .stack-column,.stack-column-center {
+          display:block !important;
+          width:100% !important;
+          max-width:100% !important;
+          direction:ltr !important;
+        }
+        
+        /* And center justify these ones. */
+        .stack-column-center {
+          text-align:center !important;
+        }
+        
+        /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+        .center-on-narrow {
+          text-align:center !important;
+          display:block !important;
+          margin-left:auto !important;
+          margin-right:auto !important;
+          float:none !important;
+        }
+        
+        table.center-on-narrow {
+          display:inline-block !important;
+        }
+        
+        /* What it does: Adjust typography on small screens to improve readability */
+        .email-container p {
+          font-size:17px !important;
+        }
+      }
+    </style>
+  </head>
+  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #E5E5E5;">
+    <!--*|IF:MC_PREVIEW_TEXT|*-->
+    <!--[if !gte mso 9]><!--><span class="mcnPreview Text" style="display:none; font-size:0px; line-height:0px; max-height:0px; max-width:0px; opacity:0; overflow:hidden; visibility:hidden; mso-hide:all;">*|MC_PREVIEW_TEXT|*</span>
+    <!--<![endif]-->
+    <!--*|END:IF|*-->
+    <center style="width:100%;">
+      <!--[if mso | IE]>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color:#E5E5E5;">
+        <tr>
+          <td>
+            <![endif]-->
+      <!-- Visually Hidden Preheader Text : BEGIN -->
+      <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family:sans-serif;">
+        <!-- (Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject line or even summarize the email's contents. Extended text preheaders (~490 characters) seems like a better UX for anyone using a screenreader or voice-command apps like Siri to dictate the contents of an email. If this text is not included, email clients will automatically populate it using the text (including image alt text) at the start of the email's body. -->
+      </div>
+      <!-- Visually Hidden Preheader Text : END -->
+      <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+      <!-- Preview Text Spacing Hack : BEGIN -->
+      <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family:sans-serif;">
+        ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ 
+      </div>
+      <!-- Preview Text Spacing Hack : END -->
+      
+      <!-- Email Body : BEGIN -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer" class="email-container" style="height:100%;">
+        <tr>
+          <td valign="top" id="bodyCell">
+            <!-- Header : BEGIN -->
+            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;" id="headerContainer">
+              <tr>
+                <td valign="top" id="header">
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <!-- Web version -->
+                    <tr>
+                      <td style="padding:10px 15px 0px;font-size:10px;text-align:right;font-family:Nunito, sans-serif;" id="webVersionContainer">
+                        <a href="*|ARCHIVE|*">View in browser</a>
+                      </td>
+                    </tr>
+                    <!-- Logo -->
+                    <tr>
+                      <td valign="top" style="text-align:left;padding:10px 20px;" class="logoContainer">
+                        <a href="https://www.tulloch.com/"><img alt="tulloch logo" src="https://gallery.mailchimp.com/f4762498ecfb4278e7b8b2a33/images/0f3cfbdb-28d4-4e21-a5cd-f1146f09d32a.png" width="198" style="max-width:396px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="logoImage"></a>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Header : END -->
+            <!-- Hero 1 : BEGIN -->
+            <!-- Hero image / video -->
+            <!-- <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;" id="heroContainer1" class="hero-container">
+            <tr>
+              <td valign="top" width="100%" id="heroImageContainer1" style="background-color:#131313;" class="hero-image">
+                <a href="https://www.tulloch.com/" target="_blank"><img src="https://gallery.mailchimp.com/f4762498ecfb4278e7b8b2a33/images/5774be95-1779-435c-a7e0-e856d2c1c386.jpg" alt="Hero Image" style="width:100%; height: auto;"></a>
+              </td>
+            </tr>
+          </table> -->
+            <!-- Hero 1 : END -->
+            <!-- Main : BEGIN -->
+            <!-- <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;" id="mainContainer"> -->
+            <!-- <tr> -->
+            <!-- Text headline : BEGIN -->
+            <!-- <td valign="top" style="text-align:left;padding:100px 20px 100px 20px;" id="headlineContainer">
+            <h1 style="font-family:Nunito, sans-serif;font-size:32px;line-height:40px;color:#ffffff;" id="headlineText"> Introducing the T-01, First Edition.<br />50 pieces in 18k white and red gold.</h1>
+          </td>
+        </tr>
+      </table> -->
+            <!-- Text headline : END -->
+            <!-- Main body text : BEGIN -->
+            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;" id="mainContainer">
+              <tr>
+                <td>
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" id="mainBodyContainer">
+                    <tr>
+                      <td valign="top" id="bodyHeadlineContainer">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:35px 20px;" class="mcnTextContent">
+                        <h5 style="font-family:Abel, sans-serif;font-size:16px;line-height:23px;text-align:left;letter-spacing:.15em;color:#ffffff;text-transform:uppercase;padding-bottom:20px;" id="captionHeadline1" class="caption-headline">THE LAUNCH</h5>
+                        <!-- <p style="margin:auto;font-size:60px;text-align:left;color:#ffffff;" id="bodyHeadline">“</p> -->
+                        <!-- <div style="width:25px;height:auto;padding:40px 0px;" id="quotemark">
+                        
+                        
+                        
+                        
+                        
+                        
+                      </div> -->
+                        <h1 style="margin:auto;font-family:Nunito, sans-serif;text-align:left;color:#ffffff;" id="bodyHeadline">I am delighted to introduce our first newsletter, celebrating the launch of our new watch, the T-01, First Edition.</h1>
+                        <p style="margin:auto;font-family:Nunito, sans-serif;font-size:17px;line-height:20px;padding:20px 0px;text-align:left;color:#ffffff;">- SHANE TULLOCH</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="bodyTextContainer" class="stack-column-center">
+                        <!-- <p style="margin:auto;font-family:Nunito, sans-serif;font-size:15px;line-height:20px;padding:5px 20px 95px;text-align:left;color:#ffffff;" id="bodyText">
+                      </p> -->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <!-- Main body text : END -->
+            <!-- Image captions 1 : BEGIN -->
+            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;">
+              <tr>
+                <td>
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <!-- Image caption 1 : BEGIN -->
+                      <th valign="top" width="50%" class="caption-container stack-column-center">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <!-- caption 1 image -->
+                          <tr>
+                            <td style="text-align:center;" id="captionImageContainer1" class="caption-image">
+                              <a href="https://www.tulloch.com/collection" target="-blank"><img src="https://gallery.mailchimp.com/f4762498ecfb4278e7b8b2a33/images/56e628ea-bd15-44cb-b2b7-144dcf29a27e.jpg" width="100%" alt="watch image" border="0" style="width: 100%;"></a>
+                            </td>
+                          </tr>
+                          <!-- caption 1 headline -->
+                          <tr>
+                            <td id="captionHeadlineContainer1" class="stack-column-center">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:22px 20px 6px;" class="mcnTextContent">
+                              <h5 style="font-family:Abel, sans-serif;font-size:16px;line-height:23px;text-align:left;letter-spacing:.15em;color:#ffffff;text-transform:uppercase;" class="caption-headline">FIRST EDITION, 50 PIECES</h5>
+                            </td>
+                          </tr>
+                          <!-- caption 1 text -->
+                          <tr>
+                            <td id="captionTextContainer1" class="stack-column-center">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding:6px 20px 50px;" class="mcnTextContent">
+                              <p style="margin:auto;font-family:Nunito, sans-serif;font-size:16px;line-height:26px;text-align:left;color:#ffffff;letter-spacing:.03em;" id="captionText1" class="caption-text">
+                                The T-01 First Edition is a special limited release of 50 individually-numbered pieces in 18k red and white gold.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </th>
+                        <!-- Image caption 1 : END -->
+                        <!-- Image caption 2 : BEGIN -->
+                        <th valign="top" width="50%" id="captionContainer2" class="caption-container stack-column-center">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <!-- Optcaptionion 2 image -->
+                            <tr>
+                              <td style="text-align:center;" id="captionImageContainer2" class="caption-image">
+                                <a href="https://www.tulloch.com/collection" target="-blank"><img src="https://gallery.mailchimp.com/f4762498ecfb4278e7b8b2a33/images/16883b4d-8fb8-46d7-9668-ead0a70320b0.jpg" width="100%" alt="watch image" border="0" style="width: 100%;"></a>
+                              </td>
+                            </tr>
+                            <!-- caption 2 headline -->
+                            <tr>
+                              <td id="captionHeadlineContainer2" class="stack-column-center">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:22px 20px 6px;" class="mcnTextContent">
+                                <h5 style="font-family:Abel, sans-serif;font-size:16px;line-height:23px;text-align:left;letter-spacing:.15em;color:#ffffff;text-transform:uppercase;" id="captionHeadline2" class="caption-headline">TWO-TONE DIAL</h5>
+                              </td>
+                            </tr>
+                            <!-- caption 2 text -->
+                            <tr>
+                              <td id="captionTextContainer2" class="stack-column-center">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:6px 20px 50px;" class="mcnTextContent">
+                                <p style="margin:auto;font-family:Nunito, sans-serif;font-size:16px;line-height:26px;text-align:left;color:#ffffff;letter-spacing:.03em;" id="captionText2" class="caption-text">Each piece has an alluring two-tone powder-frosted dial with embossed numerals carved from a single piece of 18k gold.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </th>
+                        <!-- Image caption 1 : END -->
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Image captions 1 : END -->
+              <!-- Image captions 2 : BEGIN -->
+              <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;">
+                <tr>
+                  <td>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <tr>
+                        <!-- Image caption 1 : BEGIN -->
+                        <th valign="top" width="50%" class="caption-container stack-column-center">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <!-- caption 1 image -->
+                            <tr>
+                              <td style="text-align:center;" class="caption-image">
+                                <a href="https://www.tulloch.com/collection" target="-blank"><img src="https://gallery.mailchimp.com/f4762498ecfb4278e7b8b2a33/images/d62f9994-8423-4dcf-b0a4-2434a95094a1.jpg" width="100%" alt="watch image" border="0" style="width: 100%;"></a>
+                              </td>
+                            </tr>
+                            <!-- caption 1 headline -->
+                            <tr>
+                              <td class="stack-column-center">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:22px 20px 6px;" class="mcnTextContent">
+                                <h5 style="font-family:Abel, sans-serif;font-size:16px;line-height:23px;text-align:left;letter-spacing:.15em;color:#ffffff;text-transform:uppercase;" class="caption-headline">BUILT FROM THE GROUND UP</h5>
+                              </td>
+                            </tr>
+                            <!-- caption 1 text -->
+                            <tr>
+                              <td class="stack-column-center">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:6px 20px 50px;" class="mcnTextContent">
+                                <p style="margin:auto;font-family:Nunito, sans-serif;font-size:16px;line-height:26px;text-align:left;color:#ffffff;letter-spacing:.03em;" class="caption-text">With a design inspired by precision chronometers from the roots of watchmaking history, and a movement built from the ground up at our workshop in Switzerland...</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </th>
+                        <!-- Image caption 1 : END -->
+                        <!-- Image caption 2 : BEGIN -->
+                        <th valign="top" width="50%" class="caption-container stack-column-center">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <!-- Optcaptionion 2 image -->
+                            <tr>
+                              <td style="text-align:center;" class="caption-image">
+                                <a href="https://www.tulloch.com/collection" target="-blank"><img src="https://gallery.mailchimp.com/f4762498ecfb4278e7b8b2a33/images/1c7384d2-7a5a-47e7-bc39-fec0c13bf6d7.jpg" width="100%" alt="watch image" border="0" style="width: 100%;"></a>
+                              </td>
+                            </tr>
+                            <!-- caption 2 headline -->
+                            <tr>
+                              <td class="stack-column-center">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:22px 20px 6px;" class="mcnTextContent">
+                                <h5 style="font-family:Abel, sans-serif;font-size:16px;line-height:23px;text-align:left;letter-spacing:.15em;color:#ffffff;text-transform:uppercase;" class="caption-headline">3 YEARS TO CREATE</h5>
+                              </td>
+                            </tr>
+                            <!-- caption 2 text -->
+                            <tr>
+                              <td class="stack-column-center">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:6px 20px 50px;" class="mcnTextContent">
+                                <p style="margin:auto;font-family:Nunito, sans-serif;font-size:16px;line-height:26px;text-align:left;color:#ffffff;letter-spacing:.03em;" class="caption-text">The T-01 is the product of 3 years of research and development by a passionate team of experts in design, engineering and watchmaking.</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </th>
+                        <!-- Image caption 2 : END -->
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Image captions 1 : END -->
+              <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;">
+                <!-- Button 1 : BEGIN -->
+                <tr>
+                  <td>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:auto;" class="button-container">
+                      <tr>
+                        <td style="width:260px;height:45px;border-radius:5px;letter-spacing:.15em;text-transform:uppercase;text-align:center;padding:25px 0px 75px;" class="button">
+                          <a href="https://www.tulloch.com/collection" target="_blank" style="font-family:Abel;font-size:16px;line-height:23px;text-decoration:none;padding:11px 0px;color:#ffffff;display:block;border-radius:5px;border:1px solid #ffffff;" class="button-a">Learn more</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Button 1 : END -->
+              <!-- Hero 2 : BEGIN -->
+              <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;" id="heroContainer2" class="hero-container">
+                <!-- Hero image / video -->
+                <tr>
+                  <td valign="top" width="100%" id="heroImageContainer2" style="background-color:#131313;" class="hero-image">
+                    <a href="https://www.tulloch.com/design-craft" target="_blank"><img src="https://gallery.mailchimp.com/f4762498ecfb4278e7b8b2a33/images/0ffa3cfc-3389-4183-a2eb-29b6e80dd2f6.jpg" alt="Hero Image" style="width:100%; height: auto;"></a>
+                  </td>
+                </tr>
+              </table>
+              <!-- Hero 2 : END -->
+              <!-- Main body text : BEGIN -->
+              <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;">
+                <tr>
+                  <td>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                      <!-- <tr>
+                      <td valign="top" id="bodyHeadlineContainer">
+                        <h1 style="margin:auto;font-family:Nunito, sans-serif;text-align:left;padding:96px 20px 17px 20px;color:#ffffff;" id="bodyHeadline"> </h1>
+                      </td>
+                    </tr> -->
+                      <tr>
+                        <td class="stack-column-center">
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:30px 25px;" class="mcnTextContent">
+                          <p style="margin:auto;font-family:Nunito, sans-serif;font-size:17px;line-height:20px;padding:6px 20px;text-align:left;color:#ffffff;" id="bodyText"></p>
+                          <!-- <p style="margin:auto;font-size:60px;text-align:left;color:#ffffff;padding:5px 20px;" id="bodyHeadline">“</p> -->
+                          <p style="margin:auto;font-family:Nunito, sans-serif;font-size:17px;line-height:20px;padding:5px 20px;text-align:left;color:#ffffff;">Read a detailed review of the T-01 by the Swiss Editor of <a href="https://monochrome-watches.com/tulloch-t-01-first-edition-regulator-introducing-price/" target="_blank">Monochrome</a>.</p>
+                          
+                          <p style="margin:auto;font-family:Nunito, sans-serif;font-size:17px;line-height:20px;padding:5px 20px;text-align:left;color:#ffffff;">Or see the full collection, live video and more at</p>
+                          <p style="margin:auto;font-family:Nunito, sans-serif;font-size:17px;line-height:20px;padding:5px 20px;text-align:left;color:#ffffff;"><a href="https://www.tulloch.com/" target="_blank">tulloch.com</a>, and follow us on Instagram <a href="https://www.instagram.com/tullochofficial/" target="_blank">@tullochofficial</a>.</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Main body text : END -->
+              <!-- Button 2 : BEGIN -->
+              <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;">
+                <tr>
+                  <td>
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="margin:auto;" class="button-container">
+                      <tr>
+                        <td style="width:260px;height:45px;border-radius:5px;letter-spacing:.15em;text-transform:uppercase;text-align:center;padding:25px 0px 75px;" class="button">
+                          <a href="https://www.tulloch.com/design-craft" target="_blank" style="font-family:abel;font-size:16px;line-height:23px;text-decoration:none;padding:11px 0px;color:#ffffff;display:block;border-radius:5px;border:1px solid #ffffff;" class="button-a">View the full story</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <!-- Button 2 : END -->
+              <!-- Boxed text : BEGIN -->
+              <!-- <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;" id="mainContainer"> -->
+              <!-- <tr> -->
+              <!-- <td valign="middle" style="padding:13px 20px;"> -->
+              <!-- <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color:#252525;border-radius:5px;" id="boxContainer" class="box"> -->
+              <!-- Boxed headline -->
+              <!-- <tr> -->
+              <!-- <td valign="top" id="boxHeadline" class="stack-column-center">  -->
+              <!-- <h3 style="font-family:Nunito, sans-serif;font-size:21px;line-height:32px;color:#ffffff;padding:48px 45px 18px 40px;letter-spacing:.109em;text-align:left;" class="product-intro">Made to measure: Choose your own hand-made Guilloché pattern.</h3> -->
+              <!-- </td> -->
+              <!-- </tr> -->
+              <!-- Boxed text -->
+              <!-- <tr> -->
+              <!-- <td valign="top" id="boxText" class="stack-column-center"> -->
+              <!-- <p style="margin:auto;font-family:Nunito, sans-serif;font-size:16px;line-height:26px;color:#ffffff;padding:5px 40px 15px;letter-spacing:.03em;text-align:left;" class="option2-text">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p> -->
+              <!-- </td> -->
+              <!-- </tr> -->
+              <!-- Boxed fingerprint -->
+              <!-- <tr> -->
+              <!-- <td valign="top" id="boxFingerprint" class="stack-column-center"> -->
+              <!-- <p style="margin:auto;font-family:Nunito, sans-serif;font-size:14px;line-height:22px;color:#ffffff;padding:5px 40px 45px;letter-spacing:.03em;text-align:left;" class="option2-text">The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli.</p> -->
+              <!-- </td> -->
+              <!-- </tr> -->
+              <!-- </table> -->
+              <!-- </td> -->
+              <!-- </tr> -->
+              <!-- </table> -->
+              <!-- Boxed text : END -->
+              <!-- Social sharing : BEGIN -->
+              <!-- <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#131313;" id="mainContainer"> -->
+              <!-- <tr> -->
+              <!-- <td style="padding:38px 0px 80px;"> -->
+              <!-- <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" id="bodySocialContainer" class="social-sharing"> -->
+              <!-- <tr> -->
+              <!-- Facebook -->
+              <!-- <td valign="middle" style="padding:5px;" class="icon-img"> -->
+              <!-- <a href="http://facebook.com" target="_blank"><img src="images/facebook-icon.png" style="display:block;" height="15" alt="facebook-icon.png"></a> -->
+              <!-- </td> -->
+              <!-- <td valign="bottom" style="padding:5px;" class="icon-text"> -->
+              <!-- <a href="http://facebook.com" target="_blank">
+              <p style="margin:auto;font-family:Nunito, sans-serif;font-size:16px;line-height:26px;color:#ffffff;letter-spacing:.03em;text-align:left;padding-right:5px;">Share</p></a> -->
+              <!-- </td> -->
+              <!-- twitter -->
+              <!-- <td valign="middle" style="padding:5px;" class="icon-img"> -->
+              <!-- <a href="http://twitter.com" target="_blank"><img src="images/tweet-icon.png" style="display:block;" height="15" alt="tweet-icon.png"></a> -->
+              <!-- </td> -->
+              <!-- <td valign="bottom" style="padding:5px;" class="icon-text"> -->
+              <!-- <a href="http://twitter.com" target="_blank">
+              <p style="margin:auto;font-family:Nunito, sans-serif;font-size:16px;line-height:26px;color:#ffffff;letter-spacing:.03em;text-align:left;padding-right:5px;">Tweet</p></a> -->
+              <!-- </td> -->
+              <!-- Email -->
+              <!-- <td valign="middle" style="padding:5px;" class="icon-img"> -->
+              <!-- <a href="" target="_blank"><img src="images/email-icon.png" style="display:block;" height="15" alt="email-icon.png"></a> -->
+              <!-- </td> -->
+              <!-- <td valign="bottom" style="padding:5px;" class="icon-text"> -->
+              <!-- <a href="" target="_blank">
+              <p style="margin:auto;font-family:Nunito, sans-serif;font-size:16px;line-height:26px;color:#ffffff;letter-spacing:.03em;text-align:left;padding-right:5px;">Send</p></a> -->
+              <!-- </td> -->
+              <!-- </tr> -->
+              <!-- </table> -->
+              <!-- </td> -->
+              <!-- </tr> -->
+              <!-- </table> -->
+              <!-- Social sharing : END -->
+              <!-- Main : END -->
+              <!-- Footer : BEGIN -->
+              <table cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:auto;background-color:#ffffff;" id="footerContainer">
+                <!-- Socials : BEGIN -->
+                <tr>
+                  <td style="padding:40px 0px;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="20%" id="footerSocialContainer" class="social-sharing">
+                      <tr>
+                        <!-- twitter -->
+                        <!-- <td valign="middle" style="padding:2px;" class="icon-img">
+                        <a href="http://facebook.com" target="_blank"><img src="https://gallery.mailchimp.com/f4762498ecfb4278e7b8b2a33/images/1ef28e39-329f-4a7a-bdb3-774644a9f0fc.png" alt="twitter icon" style="display:block;" height="25"></a>
+                      </td> -->
+                        <!-- instagram -->
+                        <td align="center" valign="middle" style="padding:2px;" class="icon-img">
+                          <a href="https://www.instagram.com/tullochofficial/" target="_blank"><img src="https://gallery.mailchimp.com/f4762498ecfb4278e7b8b2a33/images/226b9618-73a5-4440-bd24-13893b9403f1.png" alt="intagram icon" style="display:block;" height="25"></a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- Social sharing : END -->
+                <!-- Fineprints : BEGIN -->
+                <tr>
+                  <td id="fineprintsContainer" style="padding:10px;">
+                    <p style="margin:auto;font-family:Nunito, sans-serif;font-size:12px;line-height:20px;color:#000000;letter-spacing:.03em;text-align:center;" class="fineprints">Copyright © 2019 Tulloch, All rights reserved.<!-- Copyright (C) *|CURRENT_YEAR|* *|LIST:COMPANY|* All rights reserved. -->
+                    </p>
+                    <p style="margin:auto;font-family:Nunito, sans-serif;font-size:12px;line-height:20px;color:#000000;letter-spacing:.03em;text-align:center;" class="fineprints">You received this newsletter because you signed up to our mailing list in</p>
+                    <p style="margin:auto;font-family:Nunito, sans-serif;font-size:12px;line-height:20px;color:#000000;letter-spacing:.03em;text-align:center;" class="fineprints"><a href="https://www.tulloch.com/" target="_blank">www.tulloch.com</a>
+                  </p>
+                  <p style="margin:auto;font-family:Nunito, sans-serif;font-size:12px;line-height:20px;color:#000000;padding-top:20px;letter-spacing:.03em;text-align:center;" class="fineprints">Our mailing address is:</p>
+                  <p style="margin:auto;font-family:Nunito, sans-serif;font-size:12px;line-height:20px;color:#000000;letter-spacing:.03em;text-align:center;" class="fineprints">Church Street STA, P.O. Box 1767, New York, NY 10008<!-- *|HTML:LIST_ADDRESS_HTML|* -->
+                  </p>
+                  <p style="margin:auto;font-family:Nunito, sans-serif;font-size:12px;line-height:20px;color:#000000;padding-top:20px;letter-spacing:.03em;text-align:center;" class="fineprints"><a href="" target="_blank">Add us to your address book</a>
+                </p>
+                <p style="margin:auto;font-family:Nunito, sans-serif;font-size:12px;line-height:20px;color:#000000;padding-top:20px;letter-spacing:.03em;text-align:center;" class="fineprints">Want to change how you receive these emails?</p>
+                <p style="margin:auto;font-family:Nunito, sans-serif;font-size:12px;line-height:20px;color:#000000;letter-spacing:.03em;text-align:center;" class="fineprints"><a href="*|UPDATE_PROFILE|*" target="_blank">You can update your preferences</a> or <a href="*|UNSUB|*">Unsubscribe</a> <!-- *|EMAIL|* --> from this list.<br>
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!-- Footer : END -->
+        </td>
+      </tr>
+    </table>
+    <!--[if mso | IE]>
+  </td>
+</tr>
+</table>
+<![endif]-->
+  </center>
+</body>
+</html>
